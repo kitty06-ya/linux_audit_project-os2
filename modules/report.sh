@@ -146,3 +146,6 @@ EOF
     echo "    HTML : $REPORT_HTML"
     send_email "$REPORT_TXT"
 }
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    generate_report
+fi

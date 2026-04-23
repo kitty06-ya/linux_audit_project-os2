@@ -27,3 +27,6 @@ setup_cron() {
         echo ">>> ERROR: Failed to set cron job."
     fi
 }
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    setup_cron
+fi

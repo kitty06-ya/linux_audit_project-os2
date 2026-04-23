@@ -33,3 +33,6 @@ collect_software() {
 
     echo ">>> Software collection done!"
 }
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    collect_software
+fi

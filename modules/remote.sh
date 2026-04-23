@@ -32,3 +32,6 @@ send_remote() {
         echo ">>> ERROR: Failed to send report to remote server."
     fi
 }
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    send_remote
+fi

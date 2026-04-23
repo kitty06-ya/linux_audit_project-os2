@@ -28,3 +28,6 @@ send_email() {
         echo ">>> ERROR: Email failed to send."
     fi
 }
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    send_email "$1"
+fi

@@ -126,3 +126,6 @@ echo -e "${SOFT_PINK}Report type     : ${NC}$REPORT_TYPE"
 echo -e "${SOFT_PINK}Hostname        : ${NC}$HOSTNAME"
 echo -e "${SOFT_PINK}Timestamp       : ${NC}$TIMESTAMP"
 echo -e "${PINK}============================================${NC}"
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    show_menu
+fi

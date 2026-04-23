@@ -32,3 +32,6 @@ collect_hardware() {
 
     echo ">>> Hardware collection done!"
 }
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    collect_hardware
+fi
