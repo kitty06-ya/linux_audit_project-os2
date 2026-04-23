@@ -1,7 +1,7 @@
 ================================================
         LINUX SYSTEM AUDIT REPORT (FULL)
 ================================================
-Date     : 20260423_032032
+Date     : 20260423_035537
 Hostname : kitty-VirtualBox
 ================================================
 
@@ -15,7 +15,7 @@ Model name:                              AMD Ryzen 7 PRO 4750U with Radeon Graph
 NUMA node0 CPU(s):                       0-3
 
 RAM:
-Mem:           7.8Gi       2.7Gi       1.1Gi       309Mi       4.4Gi       5.1Gi
+Mem:           7.8Gi       3.7Gi       292Mi       454Mi       4.0Gi       4.0Gi
 
 DISK:
 Filesystem      Size  Used Avail Use% Mounted on
@@ -108,15 +108,15 @@ RUNNING SERVICES:
 
 TOP 10 PROCESSES:
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root       10472 32.1  0.0  17292  7820 ?        Ss   03:20   0:00 /usr/lib/systemd/systemd-hostnamed
-kitty       4119 16.7  7.8 1480050264 635760 ?   Sl   02:55   4:13 /snap/code/234/usr/share/code/code --type=zygote --no-sandbox
-kitty       4088 15.0  5.1 34184100 421328 ?     Sl   02:55   3:46 /proc/self/exe --type=gpu-process --disable-gpu-sandbox --no-sandbox --ozone-platform=x11 --crashpad-handler-pid=3967 --enable-crash-reporter=c6ceb61e-f62c-4a52-abc8-7499c287b58b,no_channel --user-data-dir=/home/kitty/.config/Code --gpu-preferences=UAAAAAAAAAAgAAAEAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --use-gl=angle --use-angle=swiftshader-webgl --shared-files --field-trial-handle=3,i,7632276157124822073,17240221890110073814,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708990997080739
-kitty       2813 14.9  6.1 11927896 497684 ?     Sl   02:55   3:48 /snap/firefox/7901/usr/lib/firefox/firefox
-kitty       1970 11.8  4.0 4059548 326012 ?      Ssl  02:53   3:09 /usr/bin/gnome-shell
-kitty       3544 11.2  3.0 2873976 246352 ?      Sl   02:55   2:50 /snap/firefox/7901/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:44068 -prefMapHandle 1:278348 -jsInitHandle 2:227672 -parentBuildID 20260225164830 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {a6456b27-c4c5-4754-b942-6f732a11d293} -parentPid 2813 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7901/usr/lib/firefox/omni.ja -appomni /snap/firefox/7901/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7901/usr/lib/firefox/browser 8 tab
-kitty       3932  2.6  2.3 1461497204 190368 ?   SLsl 02:55   0:39 /snap/code/234/usr/share/code/code --no-sandbox --force-user-env --ozone-platform=x11
-kitty       2396  1.5  1.3 304052 109364 ?       S    02:53   0:25 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.Z2T6N3 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7 -byteswappedclients
-kitty       4335  1.0  1.4 1478187220 118560 ?   Sl   02:55   0:15 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --no-sandbox --js-flags=--nodecommit_pooled_pages --crashpad-handler-pid=3967 --enable-crash-reporter=c6ceb61e-f62c-4a52-abc8-7499c287b58b,no_channel --user-data-dir=/home/kitty/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7632276157124822073,17240221890110073814,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708998493415531
+root       14384 42.3  0.0  17292  7828 ?        Ss   03:55   0:00 /usr/lib/systemd/systemd-hostnamed
+kitty       2813 22.0  9.1 12693328 747124 ?     Sl   02:55  13:18 /snap/firefox/7901/usr/lib/firefox/firefox
+kitty       1970 13.9  4.0 4053196 327632 ?      Ssl  02:53   8:37 /usr/bin/gnome-shell
+kitty       4119 11.1  9.9 1481902952 805600 ?   Sl   02:55   6:42 /snap/code/234/usr/share/code/code --type=zygote --no-sandbox
+kitty       3544 10.7  3.2 2964480 266620 ?      Sl   02:55   6:30 /snap/firefox/7901/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:44068 -prefMapHandle 1:278348 -jsInitHandle 2:227672 -parentBuildID 20260225164830 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {a6456b27-c4c5-4754-b942-6f732a11d293} -parentPid 2813 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7901/usr/lib/firefox/omni.ja -appomni /snap/firefox/7901/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7901/usr/lib/firefox/browser 8 tab
+kitty       4088 10.1  7.6 34334128 621612 ?     Sl   02:55   6:07 /proc/self/exe --type=gpu-process --disable-gpu-sandbox --no-sandbox --ozone-platform=x11 --crashpad-handler-pid=3967 --enable-crash-reporter=c6ceb61e-f62c-4a52-abc8-7499c287b58b,no_channel --user-data-dir=/home/kitty/.config/Code --gpu-preferences=UAAAAAAAAAAgAAAEAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --use-gl=angle --use-angle=swiftshader-webgl --shared-files --field-trial-handle=3,i,7632276157124822073,17240221890110073814,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708990997080739
+kitty       3548  5.4  5.9 3444852 484556 ?      Sl   02:55   3:15 /snap/firefox/7901/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:44068 -prefMapHandle 1:278348 -jsInitHandle 2:227672 -parentBuildID 20260225164830 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {44acadc2-1743-4df7-800f-96c1434c9fbb} -parentPid 2813 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7901/usr/lib/firefox/omni.ja -appomni /snap/firefox/7901/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7901/usr/lib/firefox/browser 9 tab
+kitty       3537  2.3  3.7 2945284 302952 ?      Sl   02:55   1:23 /snap/firefox/7901/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:44068 -prefMapHandle 1:278348 -jsInitHandle 2:227672 -parentBuildID 20260225164830 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {a56fb575-ecee-48a2-8d55-ea7431bca29d} -parentPid 2813 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7901/usr/lib/firefox/omni.ja -appomni /snap/firefox/7901/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7901/usr/lib/firefox/browser 7 tab
+kitty       3932  1.7  2.5 1461546312 208688 ?   SLsl 02:55   1:02 /snap/code/234/usr/share/code/code --no-sandbox --force-user-env --ozone-platform=x11
 
 OPEN PORTS:
 Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
