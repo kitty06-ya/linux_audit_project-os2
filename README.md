@@ -4,28 +4,58 @@ Version: 1.0
 Author: Aya
 Course: OS2 - NSCS 2025/2026
 
-What is this?
+Overview
 
-This is an automated Linux audit tool that collects hardware and software information and generates structured reports. It is designed for cybersecurity purposes such as system auditing, asset inventory, and vulnerability analysis.
+This tool is an automated Linux system audit solution that collects hardware and software information and generates structured reports. It is designed for system auditing, asset tracking, and basic security assessment.
 
 Features
-Hardware audit (CPU, RAM, disk, GPU, network, MAC, USB, motherboard)
-Software audit (OS, kernel, packages, services, processes, open ports)
-Two report types: Short (summary) and Full (detailed)
-Report formats: TXT and HTML
-Email delivery of reports
-Cron automation (daily at 4:00 AM)
-Remote monitoring via SSH
-Interactive menu system (bonus feature)
-Logging and error handling
+Hardware information (CPU, RAM, disk, network, USB, motherboard)
+Software information (OS, kernel, packages, services, processes, open ports)
+Short and Full report modes
+TXT and HTML report generation
+Email report sending
+Cron-based automation (daily execution)
+SSH-based remote monitoring
+Logging system
+Interactive menu (optional feature)
 Project Structure
 
-linux_audit_project/
-├── modules/
-│ ├── audit.sh Main entry point
-│ ├── hardware.sh Hardware collection
-│ ├── software.sh Software collection
-│ ├── report.sh Report generation (TXT/HTML)
+The project is organized into modules for each function: audit, hardware, software, reporting, email, automation, remote access, and menu system. It also includes folders for generated reports and logs, plus a configuration file for settings.
 
+Installation Summary
+Install required Linux packages (mailutils, openssh-server)
+Make scripts executable
+Configure email settings in config file
+(Optional) Set up SSH keys for remote monitoring
+Usage
+Run full audit via main script
+Optionally choose short report or disable email
+Use interactive menu for guided execution
+View generated reports in the reports folder
+Reports
 
-2025 / 2026
+Two formats are generated:
+
+Short report: basic system overview
+Full report: detailed hardware + software analysis
+
+Reports include CPU, memory, disk usage, OS version, network info, running services, installed packages, and active processes.
+
+Automation
+
+The tool can be scheduled using cron to run automatically every day at 4:00 AM.
+
+Security Notes
+Configuration file contains sensitive data and must not be shared
+SSH keys are recommended over passwords
+Email credentials should use app passwords
+Reports may contain sensitive system information
+Requirements
+Linux (Ubuntu, Debian, or Kali)
+Bash shell
+Standard system utilities (lscpu, free, df, ip, lspci, lsusb, systemctl)
+Author
+
+Aya
+National School of Cybersecurity (NSCS)
+OS2 – 2025/2026
