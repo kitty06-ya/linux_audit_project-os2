@@ -1,0 +1,91 @@
+<html>
+<head><title>Audit Report - kitty-VirtualBox</title></head>
+<body>
+<h1>Linux System Audit Report (short)</h1>
+<p><b>Date:</b> 20260423_031130</p>
+<p><b>Hostname:</b> kitty-VirtualBox</p>
+<hr>
+<h2>Hardware</h2>
+<pre>CPU: Architecture:                            x86_64
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Model name:                              AMD Ryzen 7 PRO 4750U with Radeon Graphics
+NUMA node0 CPU(s):                       0-3</pre>
+<pre>RAM: Mem:           7.8Gi       2.4Gi       1.4Gi       212Mi       4.2Gi       5.3Gi</pre>
+<pre>DISK: Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2        25G   15G  8.5G  64% /
+/dev/sr0         51M   51M     0 100% /media/kitty/VBox_GAs_7.2.2</pre>
+<pre>GPU: 00:02.0 VGA compatible controller: VMware SVGA II Adapter</pre>
+<pre>NETWORK: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet 127.0.0.1/8 scope host lo
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    inet 172.20.10.5/28 brd 172.20.10.15 scope global dynamic noprefixroute enp0s3</pre>
+<pre>MAC:     link/ether 08:00:27:33:ed:80 brd ff:ff:ff:ff:ff:ff</pre>
+<pre>USB: Bus 001 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 001 Device 002: ID 80ee:0021 VirtualBox USB Tablet
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub</pre>
+<pre>MOTHERBOARD:  Hardware Vendor: innotek GmbH
+  Hardware Model: VirtualBox
+Firmware Version: VirtualBox
+   Firmware Date: Fri 2006-12-01
+    Firmware Age: 19y 4month 3w</pre>
+<hr>
+<h2>Software</h2>
+<pre>OS: NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble</pre>
+<pre>KERNEL: 6.17.0-14-generic</pre>
+<pre>ARCH: x86_64</pre>
+<pre>PACKAGES: 1565</pre>
+<pre>USERS: kitty    seat0        2026-04-23 02:53 (login screen)
+kitty    tty2         2026-04-23 02:53 (tty2)</pre>
+<pre>SERVICES:   UNIT                          LOAD   ACTIVE SUB     DESCRIPTION
+  accounts-daemon.service       loaded active running Accounts Service
+  avahi-daemon.service          loaded active running Avahi mDNS/DNS-SD Stack
+  colord.service                loaded active running Manage, Install and Generate Color Profiles
+  cron.service                  loaded active running Regular background program processing daemon
+  cups-browsed.service          loaded active running Make remote CUPS printers available locally
+  cups.service                  loaded active running CUPS Scheduler
+  dbus.service                  loaded active running D-Bus System Message Bus
+  fwupd.service                 loaded active running Firmware update daemon
+  gdm.service                   loaded active running GNOME Display Manager
+  gnome-remote-desktop.service  loaded active running GNOME Remote Desktop
+  kerneloops.service            loaded active running Tool to automatically collect and submit kernel crash signatures
+  ModemManager.service          loaded active running Modem Manager
+  networkd-dispatcher.service   loaded active running Dispatcher daemon for systemd-networkd
+  NetworkManager.service        loaded active running Network Manager
+  polkit.service                loaded active running Authorization Manager
+  postfix@-.service             loaded active running Postfix Mail Transport Agent (instance -)
+  power-profiles-daemon.service loaded active running Power Profiles daemon
+  rsyslog.service               loaded active running System Logging Service
+  rtkit-daemon.service          loaded active running RealtimeKit Scheduling Policy Service</pre>
+<pre>PROCESSES: USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root        9030 40.0  0.0  17292  7860 ?        Ss   03:11   0:00 /usr/lib/systemd/systemd-hostnamed
+kitty       4088 16.0  3.5 34086520 290712 ?     Sl   02:55   2:34 /proc/self/exe --type=gpu-process --disable-gpu-sandbox --no-sandbox --ozone-platform=x11 --crashpad-handler-pid=3967 --enable-crash-reporter=c6ceb61e-f62c-4a52-abc8-7499c287b58b,no_channel --user-data-dir=/home/kitty/.config/Code --gpu-preferences=UAAAAAAAAAAgAAAEAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --use-gl=angle --use-angle=swiftshader-webgl --shared-files --field-trial-handle=3,i,7632276157124822073,17240221890110073814,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708990997080739
+kitty       2813 15.5  6.1 11925676 497112 ?     Sl   02:55   2:32 /snap/firefox/7901/usr/lib/firefox/firefox
+kitty       4119 14.7  5.7 1479943476 467992 ?   Sl   02:55   2:21 /snap/code/234/usr/share/code/code --type=zygote --no-sandbox
+kitty       1970 11.3  4.0 4059524 325796 ?      Ssl  02:53   1:58 /usr/bin/gnome-shell
+kitty       3544  9.9  2.9 2859300 240508 ?      Sl   02:55   1:36 /snap/firefox/7901/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:44068 -prefMapHandle 1:278348 -jsInitHandle 2:227672 -parentBuildID 20260225164830 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {a6456b27-c4c5-4754-b942-6f732a11d293} -parentPid 2813 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7901/usr/lib/firefox/omni.ja -appomni /snap/firefox/7901/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7901/usr/lib/firefox/browser 8 tab
+kitty       8998  2.7  0.0   7400  3772 pts/5    S+   03:11   0:00 /bin/bash ./modules/audit.sh
+kitty       3932  2.6  2.3 1461497204 188620 ?   SLsl 02:55   0:25 /snap/code/234/usr/share/code/code --no-sandbox --force-user-env --ozone-platform=x11
+kitty       2396  1.2  1.3 302348 107896 ?       S    02:53   0:13 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.Z2T6N3 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7 -byteswappedclients</pre>
+<pre>PORTS: Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
+udp   UNCONN 0      0            0.0.0.0:41341      0.0.0.0:*          
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*          
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*          
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*          
+udp   UNCONN 0      0               [::]:41097         [::]:*          
+udp   UNCONN 0      0               [::]:5353          [::]:*          
+tcp   LISTEN 0      4096         0.0.0.0:10050      0.0.0.0:*          
+tcp   LISTEN 0      100        127.0.0.1:25         0.0.0.0:*          
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*          
+tcp   LISTEN 0      4096       127.0.0.1:631        0.0.0.0:*          
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*          
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*          
+tcp   LISTEN 0      4096            [::]:10050         [::]:*          
+tcp   LISTEN 0      4096            [::]:22            [::]:*          
+tcp   LISTEN 0      100            [::1]:25            [::]:*          
+tcp   LISTEN 0      4096           [::1]:631           [::]:*          </pre>
+</body>
+</html>

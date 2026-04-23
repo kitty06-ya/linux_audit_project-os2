@@ -1,6 +1,6 @@
-# Generated reports
-reports/*.html
-reports/*.txt
+# Generated reports (ignore old reports, but keep examples)
+reports/report_*.html
+reports/report_*.txt
 
 # Logs
 logs/

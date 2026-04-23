@@ -1,0 +1,52 @@
+================================================
+     LINUX SYSTEM AUDIT REPORT (SHORT)
+================================================
+Date     : 20260423_031130
+Hostname : kitty-VirtualBox
+================================================
+
+CPU:
+Architecture:                            x86_64
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Model name:                              AMD Ryzen 7 PRO 4750U with Radeon Graphics
+NUMA node0 CPU(s):                       0-3
+
+RAM:
+Mem:           7.8Gi       2.4Gi       1.4Gi       212Mi       4.2Gi       5.3Gi
+
+DISK:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2        25G   15G  8.5G  64% /
+/dev/sr0         51M   51M     0 100% /media/kitty/VBox_GAs_7.2.2
+
+OS INFO:
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+
+KERNEL: 6.17.0-14-generic
+
+OPEN PORTS:
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
+udp   UNCONN 0      0            0.0.0.0:41341      0.0.0.0:*          
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*          
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*          
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*          
+udp   UNCONN 0      0               [::]:41097         [::]:*          
+udp   UNCONN 0      0               [::]:5353          [::]:*          
+tcp   LISTEN 0      4096         0.0.0.0:10050      0.0.0.0:*          
+tcp   LISTEN 0      100        127.0.0.1:25         0.0.0.0:*          
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*          
+tcp   LISTEN 0      4096       127.0.0.1:631        0.0.0.0:*          
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*          
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*          
+tcp   LISTEN 0      4096            [::]:10050         [::]:*          
+tcp   LISTEN 0      4096            [::]:22            [::]:*          
+tcp   LISTEN 0      100            [::1]:25            [::]:*          
+tcp   LISTEN 0      4096           [::1]:631           [::]:*          
+
+================================================
+           END OF SHORT REPORT
+================================================

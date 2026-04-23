@@ -1,0 +1,142 @@
+================================================
+        LINUX SYSTEM AUDIT REPORT (FULL)
+================================================
+Date     : 20260423_031040
+Hostname : kitty-VirtualBox
+================================================
+
+--- HARDWARE ---
+
+CPU:
+Architecture:                            x86_64
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Model name:                              AMD Ryzen 7 PRO 4750U with Radeon Graphics
+NUMA node0 CPU(s):                       0-3
+
+RAM:
+Mem:           7.8Gi       2.4Gi       1.5Gi       187Mi       4.2Gi       5.4Gi
+
+DISK:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2        25G   15G  8.5G  64% /
+/dev/sr0         51M   51M     0 100% /media/kitty/VBox_GAs_7.2.2
+
+GPU:
+00:02.0 VGA compatible controller: VMware SVGA II Adapter
+
+NETWORK INTERFACES:
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet 127.0.0.1/8 scope host lo
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    inet 172.20.10.5/28 brd 172.20.10.15 scope global dynamic noprefixroute enp0s3
+
+MAC ADDRESS:
+    link/ether 08:00:27:33:ed:80 brd ff:ff:ff:ff:ff:ff
+
+USB DEVICES:
+Bus 001 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 001 Device 002: ID 80ee:0021 VirtualBox USB Tablet
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+MOTHERBOARD:
+ Hardware Vendor: innotek GmbH
+  Hardware Model: VirtualBox
+Firmware Version: VirtualBox
+   Firmware Date: Fri 2006-12-01
+    Firmware Age: 19y 4month 3w
+
+--- SOFTWARE ---
+
+OS INFO:
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+
+KERNEL: 6.17.0-14-generic
+ARCHITECTURE: x86_64
+
+TOTAL INSTALLED PACKAGES: 1565
+LAST 20 PACKAGES:
+ii  xserver-xorg-video-qxl                        0.1.6-1build1                            amd64        X.Org X server -- QXL display driver
+ii  xserver-xorg-video-radeon                     1:22.0.0-1build1                         amd64        X.Org X server -- AMD/ATI Radeon display driver
+ii  xserver-xorg-video-vesa                       1:2.6.0-1ubuntu0.1                       amd64        X.Org X server -- VESA display driver
+ii  xserver-xorg-video-vmware                     1:13.4.0-1build1                         amd64        X.Org X server -- VMware display driver
+ii  xwayland                                      2:23.2.6-1ubuntu0.8                      amd64        X server for running X clients under Wayland
+ii  xxd                                           2:9.1.0016-1ubuntu7.9                    amd64        tool to make (or reverse) a hex dump
+ii  xz-utils                                      5.6.1+really5.4.5-1ubuntu0.2             amd64        XZ-format compression utilities
+ii  yaru-theme-gnome-shell                        24.04.2-0ubuntu1                         all          Yaru GNOME Shell desktop theme from the Ubuntu Community
+ii  yaru-theme-gtk                                24.04.2-0ubuntu1                         all          Yaru GTK theme from the Ubuntu Community
+ii  yaru-theme-icon                               24.04.2-0ubuntu1                         all          Yaru icon theme from the Ubuntu Community
+ii  yaru-theme-sound                              24.04.2-0ubuntu1                         all          Yaru sound theme from the Ubuntu Community
+ii  yelp                                          42.2-1ubuntu0.24.04.1                    amd64        Help browser for GNOME
+ii  yelp-xsl                                      42.1-2ubuntu0.24.04.1                    all          XSL stylesheets for the yelp help browser
+ii  zabbix-agent                                  1:7.0.25-1+ubuntu24.04                   amd64        Zabbix network monitoring solution - agent
+ii  zabbix-release                                1:7.0-2+ubuntu24.04                      all          Zabbix official repository configuration
+ii  zenity                                        4.0.1-1build3                            amd64        Display graphical dialog boxes from shell scripts
+ii  zenity-common                                 4.0.1-1build3                            all          Display graphical dialog boxes from shell scripts (common files)
+ii  zip                                           3.0-13ubuntu0.2                          amd64        Archiver for .zip files
+ii  zlib1g:amd64                                  1:1.3.dfsg-3.1ubuntu2.1                  amd64        compression library - runtime
+ii  zstd                                          1.5.5+dfsg2-2build1.1                    amd64        fast lossless compression algorithm -- CLI tool
+
+LOGGED IN USERS:
+kitty    seat0        2026-04-23 02:53 (login screen)
+kitty    tty2         2026-04-23 02:53 (tty2)
+
+RUNNING SERVICES:
+  UNIT                          LOAD   ACTIVE SUB     DESCRIPTION
+  accounts-daemon.service       loaded active running Accounts Service
+  avahi-daemon.service          loaded active running Avahi mDNS/DNS-SD Stack
+  colord.service                loaded active running Manage, Install and Generate Color Profiles
+  cron.service                  loaded active running Regular background program processing daemon
+  cups-browsed.service          loaded active running Make remote CUPS printers available locally
+  cups.service                  loaded active running CUPS Scheduler
+  dbus.service                  loaded active running D-Bus System Message Bus
+  fwupd.service                 loaded active running Firmware update daemon
+  gdm.service                   loaded active running GNOME Display Manager
+  gnome-remote-desktop.service  loaded active running GNOME Remote Desktop
+  kerneloops.service            loaded active running Tool to automatically collect and submit kernel crash signatures
+  ModemManager.service          loaded active running Modem Manager
+  networkd-dispatcher.service   loaded active running Dispatcher daemon for systemd-networkd
+  NetworkManager.service        loaded active running Network Manager
+  polkit.service                loaded active running Authorization Manager
+  postfix@-.service             loaded active running Postfix Mail Transport Agent (instance -)
+  power-profiles-daemon.service loaded active running Power Profiles daemon
+  rsyslog.service               loaded active running System Logging Service
+  rtkit-daemon.service          loaded active running RealtimeKit Scheduling Policy Service
+
+TOP 10 PROCESSES:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+kitty       8790  200  0.0  11276  4884 pts/4    R+   03:10   0:00 ps aux --sort=-%cpu
+root        8773 42.8  0.0  17292  7860 ?        Ss   03:10   0:00 /usr/lib/systemd/systemd-hostnamed
+kitty       4088 16.1  3.1 34060392 255524 ?     Sl   02:55   2:27 /proc/self/exe --type=gpu-process --disable-gpu-sandbox --no-sandbox --ozone-platform=x11 --crashpad-handler-pid=3967 --enable-crash-reporter=c6ceb61e-f62c-4a52-abc8-7499c287b58b,no_channel --user-data-dir=/home/kitty/.config/Code --gpu-preferences=UAAAAAAAAAAgAAAEAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --use-gl=angle --use-angle=swiftshader-webgl --shared-files --field-trial-handle=3,i,7632276157124822073,17240221890110073814,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708990997080739
+kitty       2813 15.7  6.1 11925676 496876 ?     Sl   02:55   2:26 /snap/firefox/7901/usr/lib/firefox/firefox
+kitty       4119 14.0  5.3 1479917596 436520 ?   Sl   02:55   2:08 /snap/code/234/usr/share/code/code --type=zygote --no-sandbox
+kitty       1970 11.1  4.0 4059516 325752 ?      Ssl  02:53   1:51 /usr/bin/gnome-shell
+kitty       3544 10.2  3.0 2888996 251588 ?      Sl   02:55   1:34 /snap/firefox/7901/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:44068 -prefMapHandle 1:278348 -jsInitHandle 2:227672 -parentBuildID 20260225164830 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {a6456b27-c4c5-4754-b942-6f732a11d293} -parentPid 2813 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7901/usr/lib/firefox/omni.ja -appomni /snap/firefox/7901/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7901/usr/lib/firefox/browser 8 tab
+kitty       3932  2.6  2.3 1461497252 188200 ?   SLsl 02:55   0:23 /snap/code/234/usr/share/code/code --no-sandbox --force-user-env --ozone-platform=x11
+kitty       2396  1.2  1.3 302348 107896 ?       S    02:53   0:12 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.Z2T6N3 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7 -byteswappedclients
+
+OPEN PORTS:
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
+udp   UNCONN 0      0            0.0.0.0:41341      0.0.0.0:*          
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*          
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*          
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*          
+udp   UNCONN 0      0               [::]:41097         [::]:*          
+udp   UNCONN 0      0               [::]:5353          [::]:*          
+tcp   LISTEN 0      4096         0.0.0.0:10050      0.0.0.0:*          
+tcp   LISTEN 0      100        127.0.0.1:25         0.0.0.0:*          
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*          
+tcp   LISTEN 0      4096       127.0.0.1:631        0.0.0.0:*          
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*          
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*          
+tcp   LISTEN 0      4096            [::]:10050         [::]:*          
+tcp   LISTEN 0      4096            [::]:22            [::]:*          
+tcp   LISTEN 0      100            [::1]:25            [::]:*          
+tcp   LISTEN 0      4096           [::1]:631           [::]:*          
+
+================================================
+           END OF FULL REPORT
+================================================
