@@ -238,21 +238,15 @@ OS: Ubuntu 24.04.4 LTS
 KERNEL: 6.8.0-31-generic
 ```
 
-## Requirements
+requirements
 
 - Linux distribution (Ubuntu/Kali/Debian)
 - Bash shell
 - Standard Linux tools (lscpu, free, df, ip, lspci, lsusb, systemctl)
 
-## Author
+Author
 
 **Aya**  
 Course: OS2 - National School of Cybersecurity (NSCS)  
 Year: 2025/2026
 
-## License
-
-Educational project for OS2 course.
-```
-
-Save this to `README.md`. Do you want me to also help you create `config.cfg.template` file?
