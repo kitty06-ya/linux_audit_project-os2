@@ -1,0 +1,33 @@
+================================================
+     LINUX SYSTEM AUDIT REPORT (SHORT)
+================================================
+Date     : 20260417_155211
+Hostname : kitty-VirtualBox
+================================================
+
+CPU:
+Architecture:                            x86_64
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Model name:                              AMD Ryzen 7 PRO 4750U with Radeon Graphics
+NUMA node0 CPU(s):                       0-3
+
+RAM:
+Mem:           7.8Gi       3.8Gi       357Mi       480Mi       3.9Gi       3.9Gi
+
+DISK:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2        25G   15G  8.9G  62% /
+/dev/sr0         51M   51M     0 100% /media/kitty/VBox_GAs_7.2.2
+
+OS INFO:
+
+
+KERNEL: 
+
+OPEN PORTS:
+
+
+================================================
+           END OF SHORT REPORT
+================================================

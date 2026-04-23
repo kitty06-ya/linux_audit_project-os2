@@ -1,0 +1,125 @@
+================================================
+        LINUX SYSTEM AUDIT REPORT (FULL)
+================================================
+Date     : 20260417_155323
+Hostname : kitty-VirtualBox
+================================================
+
+--- HARDWARE ---
+
+CPU:
+
+
+RAM:
+
+
+DISK:
+
+
+GPU:
+
+
+NETWORK INTERFACES:
+
+
+MAC ADDRESS:
+
+
+USB DEVICES:
+
+
+MOTHERBOARD:
+
+
+--- SOFTWARE ---
+
+OS INFO:
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+
+KERNEL: 6.17.0-14-generic
+ARCHITECTURE: x86_64
+
+TOTAL INSTALLED PACKAGES: 1558
+LAST 20 PACKAGES:
+ii  xserver-xorg-video-qxl                        0.1.6-1build1                            amd64        X.Org X server -- QXL display driver
+ii  xserver-xorg-video-radeon                     1:22.0.0-1build1                         amd64        X.Org X server -- AMD/ATI Radeon display driver
+ii  xserver-xorg-video-vesa                       1:2.6.0-1ubuntu0.1                       amd64        X.Org X server -- VESA display driver
+ii  xserver-xorg-video-vmware                     1:13.4.0-1build1                         amd64        X.Org X server -- VMware display driver
+ii  xwayland                                      2:23.2.6-1ubuntu0.8                      amd64        X server for running X clients under Wayland
+ii  xxd                                           2:9.1.0016-1ubuntu7.9                    amd64        tool to make (or reverse) a hex dump
+ii  xz-utils                                      5.6.1+really5.4.5-1ubuntu0.2             amd64        XZ-format compression utilities
+ii  yaru-theme-gnome-shell                        24.04.2-0ubuntu1                         all          Yaru GNOME Shell desktop theme from the Ubuntu Community
+ii  yaru-theme-gtk                                24.04.2-0ubuntu1                         all          Yaru GTK theme from the Ubuntu Community
+ii  yaru-theme-icon                               24.04.2-0ubuntu1                         all          Yaru icon theme from the Ubuntu Community
+ii  yaru-theme-sound                              24.04.2-0ubuntu1                         all          Yaru sound theme from the Ubuntu Community
+ii  yelp                                          42.2-1ubuntu0.24.04.1                    amd64        Help browser for GNOME
+ii  yelp-xsl                                      42.1-2ubuntu0.24.04.1                    all          XSL stylesheets for the yelp help browser
+ii  zabbix-agent                                  1:7.0.25-1+ubuntu24.04                   amd64        Zabbix network monitoring solution - agent
+ii  zabbix-release                                1:7.0-2+ubuntu24.04                      all          Zabbix official repository configuration
+ii  zenity                                        4.0.1-1build3                            amd64        Display graphical dialog boxes from shell scripts
+ii  zenity-common                                 4.0.1-1build3                            all          Display graphical dialog boxes from shell scripts (common files)
+ii  zip                                           3.0-13ubuntu0.2                          amd64        Archiver for .zip files
+ii  zlib1g:amd64                                  1:1.3.dfsg-3.1ubuntu2.1                  amd64        compression library - runtime
+ii  zstd                                          1.5.5+dfsg2-2build1.1                    amd64        fast lossless compression algorithm -- CLI tool
+
+LOGGED IN USERS:
+kitty    seat0        2026-04-17 14:14 (login screen)
+kitty    tty2         2026-04-17 14:14 (tty2)
+
+RUNNING SERVICES:
+  UNIT                          LOAD   ACTIVE SUB     DESCRIPTION
+  accounts-daemon.service       loaded active running Accounts Service
+  avahi-daemon.service          loaded active running Avahi mDNS/DNS-SD Stack
+  colord.service                loaded active running Manage, Install and Generate Color Profiles
+  cron.service                  loaded active running Regular background program processing daemon
+  cups-browsed.service          loaded active running Make remote CUPS printers available locally
+  cups.service                  loaded active running CUPS Scheduler
+  dbus.service                  loaded active running D-Bus System Message Bus
+  fwupd.service                 loaded active running Firmware update daemon
+  gdm.service                   loaded active running GNOME Display Manager
+  gnome-remote-desktop.service  loaded active running GNOME Remote Desktop
+  kerneloops.service            loaded active running Tool to automatically collect and submit kernel crash signatures
+  ModemManager.service          loaded active running Modem Manager
+  networkd-dispatcher.service   loaded active running Dispatcher daemon for systemd-networkd
+  NetworkManager.service        loaded active running Network Manager
+  polkit.service                loaded active running Authorization Manager
+  postfix@-.service             loaded active running Postfix Mail Transport Agent (instance -)
+  power-profiles-daemon.service loaded active running Power Profiles daemon
+  rsyslog.service               loaded active running System Logging Service
+  rtkit-daemon.service          loaded active running RealtimeKit Scheduling Policy Service
+
+TOP 10 PROCESSES:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+kitty      11285  100  0.0  11268  4924 pts/17   R+   15:53   0:00 ps aux --sort=-%cpu
+kitty       3345 11.6  8.4 12443492 688524 ?     Sl   14:16  11:12 /snap/firefox/7901/usr/lib/firefox/firefox
+kitty       1944  7.6  4.0 4054616 327344 ?      Ssl  14:14   7:32 /usr/bin/gnome-shell
+kitty       3005  6.5  9.8 1480238512 801584 ?   Sl   14:15   6:25 /snap/code/234/usr/share/code/code --type=zygote --no-sandbox
+kitty       4070  5.9  9.3 3631244 762548 ?      Sl   14:17   5:45 /snap/firefox/7901/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:44014 -prefMapHandle 1:278300 -jsInitHandle 2:227672 -parentBuildID 20260225164830 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {44a610a7-c1cf-463c-a27d-f247d7717ab8} -parentPid 3345 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7901/usr/lib/firefox/omni.ja -appomni /snap/firefox/7901/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7901/usr/lib/firefox/browser 8 tab
+kitty       4067  5.9  6.3 3584692 512456 ?      Sl   14:17   5:41 /snap/firefox/7901/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:44014 -prefMapHandle 1:278300 -jsInitHandle 2:227672 -parentBuildID 20260225164830 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {50433246-7f3f-478f-ad45-a78fcf1d9605} -parentPid 3345 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7901/usr/lib/firefox/omni.ja -appomni /snap/firefox/7901/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7901/usr/lib/firefox/browser 7 tab
+kitty       3071  4.9  7.8 51132912 642320 ?     Sl   14:15   4:52 /proc/self/exe --type=gpu-process --disable-gpu-sandbox --no-sandbox --ozone-platform=x11 --crashpad-handler-pid=2871 --enable-crash-reporter=c6ceb61e-f62c-4a52-abc8-7499c287b58b,no_channel --user-data-dir=/home/kitty/.config/Code --gpu-preferences=UAAAAAAAAAAgAAAEAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --use-gl=angle --use-angle=swiftshader-webgl --shared-files --field-trial-handle=3,i,1579056284399756143,17977677700290339511,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708995682289984
+kitty       4257  4.6  3.0 2855340 245704 ?      Sl   14:17   4:29 /snap/firefox/7901/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:44014 -prefMapHandle 1:278300 -jsInitHandle 2:227672 -parentBuildID 20260225164830 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {6d7cf972-6013-4362-bb3c-8dcd2668f526} -parentPid 3345 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7901/usr/lib/firefox/omni.ja -appomni /snap/firefox/7901/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7901/usr/lib/firefox/browser 9 tab
+kitty       2837  0.8  2.4 1478257352 199204 ?   SLsl 14:15   0:49 /snap/code/234/usr/share/code/code --no-sandbox --force-user-env --ozone-platform=x11
+
+OPEN PORTS:
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*          
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*          
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*          
+udp   UNCONN 0      0            0.0.0.0:35467      0.0.0.0:*          
+udp   UNCONN 0      0               [::]:53008         [::]:*          
+udp   UNCONN 0      0               [::]:5353          [::]:*          
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*          
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*          
+tcp   LISTEN 0      4096       127.0.0.1:631        0.0.0.0:*          
+tcp   LISTEN 0      4096         0.0.0.0:10050      0.0.0.0:*          
+tcp   LISTEN 0      100        127.0.0.1:25         0.0.0.0:*          
+tcp   LISTEN 0      4096           [::1]:631           [::]:*          
+tcp   LISTEN 0      100            [::1]:25            [::]:*          
+tcp   LISTEN 0      4096            [::]:10050         [::]:*          
+
+================================================
+           END OF FULL REPORT
+================================================
