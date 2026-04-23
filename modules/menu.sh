@@ -2,6 +2,10 @@
 # ===== INTERACTIVE MENU =====
 # Lets the user choose report type and content before running the audit
 
+# Get the directory where THIS script is located
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+
 # ===== COLORS =====
 PINK='\033[38;5;213m'
 PURPLE='\033[0;35m'
@@ -10,18 +14,21 @@ SOFT_PINK='\033[38;5;218m'
 BOLD='\033[1m'
 NC='\033[0m'
 
-source "$(dirname "$0")/config.cfg"
-source "$(dirname "$0")/modules/hardware.sh"
-source "$(dirname "$0")/modules/software.sh"
-source "$(dirname "$0")/modules/report.sh"
-source "$(dirname "$0")/modules/email.sh"
-source "$(dirname "$0")/modules/remote.sh"
-source "$(dirname "$0")/modules/automation.sh"
+# ---------- Load config ----------
+source "$PROJECT_ROOT/config.cfg"
 
-# ---------- Re-declare timestamp (sudo resets it) ----------
+# ---------- Load modules ----------
+source "$SCRIPT_DIR/hardware.sh"
+source "$SCRIPT_DIR/software.sh"
+source "$SCRIPT_DIR/report.sh"
+source "$SCRIPT_DIR/email.sh"
+source "$SCRIPT_DIR/remote.sh"
+source "$SCRIPT_DIR/automation.sh"
+
+# ---------- Re-declare timestamp ----------
 TIMESTAMP=$(date '+%Y%m%d_%H%M%S')
 HOSTNAME=$(hostname)
-REPORT_DIR="./reports"
+REPORT_DIR="$PROJECT_ROOT/reports"
 
 # ===== MENU 1: Choose report content =====
 echo ""
@@ -98,7 +105,6 @@ done
 
 # ===== Generate the report =====
 generate_report
-send_email
 send_remote
 setup_cron
 

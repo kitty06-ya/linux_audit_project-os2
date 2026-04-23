@@ -1,0 +1,23 @@
+# Generated reports
+reports/*.html
+reports/*.txt
+
+# Logs
+logs/
+*.log
+
+# Remote reports
+remote_reports/
+
+# SSH keys
+*.key
+*.pem
+.ssh/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+*.swp

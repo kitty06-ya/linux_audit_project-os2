@@ -144,4 +144,5 @@ EOF
     echo ">>> Reports saved to $REPORT_DIR"
     echo "    TXT  : $REPORT_TXT"
     echo "    HTML : $REPORT_HTML"
+    send_email "$REPORT_TXT"
 }

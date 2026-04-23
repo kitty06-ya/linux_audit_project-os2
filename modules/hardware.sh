@@ -28,7 +28,7 @@ collect_hardware() {
     USB_INFO=$(lsusb 2>/dev/null || echo "No USB info available")
 
     # ---------- MOTHERBOARD ----------
-    BOARD_INFO=$(dmidecode -t baseboard 2>/dev/null | grep -E "Manufacturer|Product" 2>/dev/null || echo "Motherboard info requires root privileges")
+    BOARD_INFO=$(hostnamectl 2>/dev/null | grep -E "Hardware|Firmware" || echo "Motherboard info not available")
 
     echo ">>> Hardware collection done!"
 }

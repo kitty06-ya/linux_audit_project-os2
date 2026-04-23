@@ -1,35 +1,50 @@
 ================================================
         LINUX SYSTEM AUDIT REPORT (FULL)
 ================================================
-Date     : 20260417_155323
+Date     : 20260423_032032
 Hostname : kitty-VirtualBox
 ================================================
 
 --- HARDWARE ---
 
 CPU:
-
+Architecture:                            x86_64
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Model name:                              AMD Ryzen 7 PRO 4750U with Radeon Graphics
+NUMA node0 CPU(s):                       0-3
 
 RAM:
-
+Mem:           7.8Gi       2.7Gi       1.1Gi       309Mi       4.4Gi       5.1Gi
 
 DISK:
-
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2        25G   15G  8.5G  64% /
+/dev/sr0         51M   51M     0 100% /media/kitty/VBox_GAs_7.2.2
 
 GPU:
-
+00:02.0 VGA compatible controller: VMware SVGA II Adapter
 
 NETWORK INTERFACES:
-
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet 127.0.0.1/8 scope host lo
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    inet 172.20.10.5/28 brd 172.20.10.15 scope global dynamic noprefixroute enp0s3
 
 MAC ADDRESS:
-
+    link/ether 08:00:27:33:ed:80 brd ff:ff:ff:ff:ff:ff
 
 USB DEVICES:
-
+Bus 001 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 001 Device 002: ID 80ee:0021 VirtualBox USB Tablet
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 
 MOTHERBOARD:
-
+ Hardware Vendor: innotek GmbH
+  Hardware Model: VirtualBox
+Firmware Version: VirtualBox
+   Firmware Date: Fri 2006-12-01
+    Firmware Age: 19y 4month 3w
 
 --- SOFTWARE ---
 
@@ -42,7 +57,7 @@ VERSION_CODENAME=noble
 KERNEL: 6.17.0-14-generic
 ARCHITECTURE: x86_64
 
-TOTAL INSTALLED PACKAGES: 1558
+TOTAL INSTALLED PACKAGES: 1565
 LAST 20 PACKAGES:
 ii  xserver-xorg-video-qxl                        0.1.6-1build1                            amd64        X.Org X server -- QXL display driver
 ii  xserver-xorg-video-radeon                     1:22.0.0-1build1                         amd64        X.Org X server -- AMD/ATI Radeon display driver
@@ -66,8 +81,8 @@ ii  zlib1g:amd64                                  1:1.3.dfsg-3.1ubuntu2.1       
 ii  zstd                                          1.5.5+dfsg2-2build1.1                    amd64        fast lossless compression algorithm -- CLI tool
 
 LOGGED IN USERS:
-kitty    seat0        2026-04-17 14:14 (login screen)
-kitty    tty2         2026-04-17 14:14 (tty2)
+kitty    seat0        2026-04-23 02:53 (login screen)
+kitty    tty2         2026-04-23 02:53 (tty2)
 
 RUNNING SERVICES:
   UNIT                          LOAD   ACTIVE SUB     DESCRIPTION
@@ -93,32 +108,34 @@ RUNNING SERVICES:
 
 TOP 10 PROCESSES:
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-kitty      11285  100  0.0  11268  4924 pts/17   R+   15:53   0:00 ps aux --sort=-%cpu
-kitty       3345 11.6  8.4 12443492 688524 ?     Sl   14:16  11:12 /snap/firefox/7901/usr/lib/firefox/firefox
-kitty       1944  7.6  4.0 4054616 327344 ?      Ssl  14:14   7:32 /usr/bin/gnome-shell
-kitty       3005  6.5  9.8 1480238512 801584 ?   Sl   14:15   6:25 /snap/code/234/usr/share/code/code --type=zygote --no-sandbox
-kitty       4070  5.9  9.3 3631244 762548 ?      Sl   14:17   5:45 /snap/firefox/7901/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:44014 -prefMapHandle 1:278300 -jsInitHandle 2:227672 -parentBuildID 20260225164830 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {44a610a7-c1cf-463c-a27d-f247d7717ab8} -parentPid 3345 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7901/usr/lib/firefox/omni.ja -appomni /snap/firefox/7901/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7901/usr/lib/firefox/browser 8 tab
-kitty       4067  5.9  6.3 3584692 512456 ?      Sl   14:17   5:41 /snap/firefox/7901/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:44014 -prefMapHandle 1:278300 -jsInitHandle 2:227672 -parentBuildID 20260225164830 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {50433246-7f3f-478f-ad45-a78fcf1d9605} -parentPid 3345 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7901/usr/lib/firefox/omni.ja -appomni /snap/firefox/7901/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7901/usr/lib/firefox/browser 7 tab
-kitty       3071  4.9  7.8 51132912 642320 ?     Sl   14:15   4:52 /proc/self/exe --type=gpu-process --disable-gpu-sandbox --no-sandbox --ozone-platform=x11 --crashpad-handler-pid=2871 --enable-crash-reporter=c6ceb61e-f62c-4a52-abc8-7499c287b58b,no_channel --user-data-dir=/home/kitty/.config/Code --gpu-preferences=UAAAAAAAAAAgAAAEAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --use-gl=angle --use-angle=swiftshader-webgl --shared-files --field-trial-handle=3,i,1579056284399756143,17977677700290339511,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708995682289984
-kitty       4257  4.6  3.0 2855340 245704 ?      Sl   14:17   4:29 /snap/firefox/7901/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:44014 -prefMapHandle 1:278300 -jsInitHandle 2:227672 -parentBuildID 20260225164830 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {6d7cf972-6013-4362-bb3c-8dcd2668f526} -parentPid 3345 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7901/usr/lib/firefox/omni.ja -appomni /snap/firefox/7901/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7901/usr/lib/firefox/browser 9 tab
-kitty       2837  0.8  2.4 1478257352 199204 ?   SLsl 14:15   0:49 /snap/code/234/usr/share/code/code --no-sandbox --force-user-env --ozone-platform=x11
+root       10472 32.1  0.0  17292  7820 ?        Ss   03:20   0:00 /usr/lib/systemd/systemd-hostnamed
+kitty       4119 16.7  7.8 1480050264 635760 ?   Sl   02:55   4:13 /snap/code/234/usr/share/code/code --type=zygote --no-sandbox
+kitty       4088 15.0  5.1 34184100 421328 ?     Sl   02:55   3:46 /proc/self/exe --type=gpu-process --disable-gpu-sandbox --no-sandbox --ozone-platform=x11 --crashpad-handler-pid=3967 --enable-crash-reporter=c6ceb61e-f62c-4a52-abc8-7499c287b58b,no_channel --user-data-dir=/home/kitty/.config/Code --gpu-preferences=UAAAAAAAAAAgAAAEAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --use-gl=angle --use-angle=swiftshader-webgl --shared-files --field-trial-handle=3,i,7632276157124822073,17240221890110073814,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708990997080739
+kitty       2813 14.9  6.1 11927896 497684 ?     Sl   02:55   3:48 /snap/firefox/7901/usr/lib/firefox/firefox
+kitty       1970 11.8  4.0 4059548 326012 ?      Ssl  02:53   3:09 /usr/bin/gnome-shell
+kitty       3544 11.2  3.0 2873976 246352 ?      Sl   02:55   2:50 /snap/firefox/7901/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:44068 -prefMapHandle 1:278348 -jsInitHandle 2:227672 -parentBuildID 20260225164830 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {a6456b27-c4c5-4754-b942-6f732a11d293} -parentPid 2813 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7901/usr/lib/firefox/omni.ja -appomni /snap/firefox/7901/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7901/usr/lib/firefox/browser 8 tab
+kitty       3932  2.6  2.3 1461497204 190368 ?   SLsl 02:55   0:39 /snap/code/234/usr/share/code/code --no-sandbox --force-user-env --ozone-platform=x11
+kitty       2396  1.5  1.3 304052 109364 ?       S    02:53   0:25 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.Z2T6N3 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7 -byteswappedclients
+kitty       4335  1.0  1.4 1478187220 118560 ?   Sl   02:55   0:15 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --no-sandbox --js-flags=--nodecommit_pooled_pages --crashpad-handler-pid=3967 --enable-crash-reporter=c6ceb61e-f62c-4a52-abc8-7499c287b58b,no_channel --user-data-dir=/home/kitty/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7632276157124822073,17240221890110073814,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708998493415531
 
 OPEN PORTS:
 Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
+udp   UNCONN 0      0            0.0.0.0:41341      0.0.0.0:*          
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*          
 udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*          
 udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*          
-udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*          
-udp   UNCONN 0      0            0.0.0.0:35467      0.0.0.0:*          
-udp   UNCONN 0      0               [::]:53008         [::]:*          
+udp   UNCONN 0      0               [::]:41097         [::]:*          
 udp   UNCONN 0      0               [::]:5353          [::]:*          
-tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*          
-tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*          
-tcp   LISTEN 0      4096       127.0.0.1:631        0.0.0.0:*          
 tcp   LISTEN 0      4096         0.0.0.0:10050      0.0.0.0:*          
 tcp   LISTEN 0      100        127.0.0.1:25         0.0.0.0:*          
-tcp   LISTEN 0      4096           [::1]:631           [::]:*          
-tcp   LISTEN 0      100            [::1]:25            [::]:*          
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*          
+tcp   LISTEN 0      4096       127.0.0.1:631        0.0.0.0:*          
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*          
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*          
 tcp   LISTEN 0      4096            [::]:10050         [::]:*          
+tcp   LISTEN 0      4096            [::]:22            [::]:*          
+tcp   LISTEN 0      100            [::1]:25            [::]:*          
+tcp   LISTEN 0      4096           [::1]:631           [::]:*          
 
 ================================================
            END OF FULL REPORT
