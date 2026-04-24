@@ -30,20 +30,20 @@ This tool is a fully automated Linux system audit solution designed for system a
 
 ---
 
-## ✨ Features
+## Features
 
-- 🖥️ **Hardware Audit** — CPU, RAM, Disk, GPU, Network interfaces, USB devices, Motherboard
-- 📦 **Software Audit** — OS info, Kernel, installed packages, running services, open ports, active processes
-- 📄 **Report Generation** — Short (summary) and Full (detailed) reports in TXT and HTML formats
-- 📧 **Email Sending** — Automatically sends reports to a configured email address
-- ⏰ **Cron Automation** — Scheduled daily execution at 4:00 AM
-- 🌐 **Remote Monitoring** — SSH-based report sending to a remote server
-- 🎨 **Colorized Output** — Color-coded terminal feedback
-- 📋 **Interactive Menu** — User-friendly menu interface
+-  **Hardware Audit** — CPU, RAM, Disk, GPU, Network interfaces, USB devices, Motherboard
+-  **Software Audit** — OS info, Kernel, installed packages, running services, open ports, active processes
+-  **Report Generation** — Short (summary) and Full (detailed) reports in TXT and HTML formats
+-  **Email Sending** — Automatically sends reports to a configured email address
+-  **Cron Automation** — Scheduled daily execution at 4:00 AM
+-  **Remote Monitoring** — SSH-based report sending to a remote server
+-  **Colorized Output** — Color-coded terminal feedback
+-  **Interactive Menu** — User-friendly menu interface
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 linux_audit_project/
@@ -65,7 +65,7 @@ linux_audit_project/
 
 ---
 
-## ⚙️ Requirements
+##  Requirements
 
 - Linux (Ubuntu, Debian, or Kali Linux)
 - Bash shell
@@ -84,7 +84,7 @@ openssh-server (for remote monitoring)
 
 ---
 
-## 🔧 Installation
+##  Installation
 
 **Step 1 — Clone the repository**
 
@@ -134,11 +134,11 @@ REMOTE_HOST="192.168.x.x"   # Remote server IP address
 REMOTE_DIR="/path/to/dir"    # Remote directory to store reports
 ```
 
-> ⚠️ Never share your `config.cfg` file — it contains sensitive credentials.
+>  Never share your `config.cfg` file — it contains sensitive credentials.
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 **Run the full audit:**
 
@@ -166,7 +166,7 @@ bash modules/menu.sh
 
 ---
 
-## 📊 Reports
+##  Reports
 
 Two types of reports are generated automatically inside the `reports/` folder:
 
@@ -184,7 +184,7 @@ reports/report_20260423_035537.html
 
 ---
 
-## ⏰ Automation
+## Automation
 
 The tool sets up a cron job automatically to run the audit every day at **4:00 AM**.
 
@@ -208,7 +208,7 @@ crontab -e
 
 ---
 
-## 🌐 Remote Monitoring
+##  Remote Monitoring
 
 The tool supports sending reports to a remote server via SSH/SCP.
 
@@ -236,7 +236,7 @@ Reports will be sent automatically every time the audit runs.
 
 ---
 
-## 🔒 Security Notes
+## Security Notes
 
 - `config.cfg` contains sensitive data — **never push it to a public repository**
 - Use **SSH keys** instead of passwords for remote access
@@ -246,7 +246,7 @@ Reports will be sent automatically every time the audit runs.
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Aya**
 National School of Cybersecurity (NSCS)
