@@ -7,7 +7,7 @@
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -24,7 +24,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This tool is a fully automated Linux system audit solution designed for system administrators and cybersecurity students. It collects detailed hardware and software information, generates structured reports in multiple formats, sends them via email, and supports SSH-based remote monitoring — all scheduled automatically using cron jobs.
 
@@ -116,7 +116,7 @@ mkdir -p remote_reports
 
 ---
 
-## 🔩 Configuration
+##  Configuration
 
 Open `config.cfg` and set your preferences:
 
